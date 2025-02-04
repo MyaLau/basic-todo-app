@@ -1,0 +1,117 @@
+/* Set general structure*/
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #f6c43d;
+}
+
+
+h1 {
+    color: #aa10c9;
+    font-size: 6em;
+    font-family: "Ranchers", sans-serif;
+}
+
+/* todo container */
+
+
+.container {
+    background: #ffffff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    border-top: 5px dotted black;
+    color: #010e66;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container::before  {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    left: -10px;
+    background-color: rgb(2, 28, 124);
+    z-index: -1;
+    border-radius: 20px;
+}
+
+
+
+#todoInput {
+    height: 35px;
+    width: 40vw;
+    border: 2px solid #848484;
+    border-radius: 5px;
+}
+
+#addTask {
+    background: #010e66;
+    height: 30px;
+    width: 30px;
+}
+
+#addTask:hover{
+    background:  #E8505B;
+}
+
+
+#todoList {
+    margin: 20px auto;
+}
+
+.todoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #0000ff;
+    padding: 10px;
+    width: 50vw;
+    border-radius: 2px;
+    font-family: "Shadows Into Light", sans-serif;
+}
+
+.todoItem span {
+    text-align: center;
+    margin: right;
+    width: 70%;
+    overflow: hidden;
+}
+
+.todoItem.checked {
+    background-color: rgb(220, 229, 250);
+}
+
+input[type="checkbox"] {
+    accent-color: #E8505B;
+}
+
+button {
+    margin: 6px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.fa-solid {
+    color: #2f2f2f;
+}
+
+.fa-plus {
+    color: white;
+}
+
+
+
+
+
+
